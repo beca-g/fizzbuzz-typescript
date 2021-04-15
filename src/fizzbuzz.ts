@@ -5,20 +5,14 @@ export class FizzBuzz {
   }
 
   divisibleByThree(number: number):number | string | void {
-    if(this.divisibleBy(number, 3)) {
-      return "Fizz"
-    }
+    if(this.divisibleBy(number, 3)) return "Fizz"
   }
 
   divisibleByFive(number: number):number | string | void {
-    if(this.divisibleBy(number, 5)) {
-      return "Buzz"
-    }
+    if(this.divisibleBy(number, 5)) return "Buzz"
   }
 
   divisibleByThreeAndFive(number: number): number | string | void {
-    if(this.divisibleBy(number, 15)) {
-      return "FizzBuzz"
-    }  
+    if(this.divisibleBy(number, 15)) return "FizzBuzz"
   }
 }
