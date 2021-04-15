@@ -9,4 +9,10 @@ describe("FizzBuzz", () => {
       expect(fizzBuzz.divisibleByThree(3)).to.equal("Fizz")
     })  
   })
+
+  describe("divisibleByFive", () => {
+    it("should return 'Buzz' when a number is divisible by five", () => {
+      expect(fizzBuzz.divisibleByFive(5)).to.equal("Buzz")
+    })
+  })
 })
