@@ -15,4 +15,10 @@ export class FizzBuzz {
       return "Buzz"
     }
   }
+
+  divisibleByThreeAndFive(number: number): number | string | void {
+    if(this.divisibleBy(number, 15)) {
+      return "FizzBuzz"
+    }  
+  }
 }
