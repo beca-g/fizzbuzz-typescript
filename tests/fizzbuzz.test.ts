@@ -25,4 +25,12 @@ describe("FizzBuzz", () => {
       expect(fizzBuzz.divisibleByThreeAndFive(15)).to.equal(true)
     })
   })
+
+  describe("play", () => {
+    describe("multiples of 3 and 5", () => {
+      it("should return 'Fizzbuzz' for 15", () => {
+        expect(fizzBuzz.play(15)).to.equal("Fizzbuzz")
+      }) 
+    })
+  })
 })
