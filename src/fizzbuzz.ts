@@ -19,6 +19,8 @@ export class FizzBuzz {
   play(number: number): string | void {
     if (this.divisibleByThreeAndFive(number)) {
       return "Fizzbuzz"
+    } else if (this.divisibleByFive(number)) {
+      return "Buzz"
     }
   }
 }
