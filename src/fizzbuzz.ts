@@ -4,15 +4,16 @@ export class FizzBuzz {
     return (number % divisor === 0)
   }
 
-  divisibleByThree(number: number): string | void {
-    if(this.divisibleBy(number, 3)) return "Fizz"
+  divisibleByThree(number: number): boolean {
+    return (this.divisibleBy(number, 3))
   }
 
-  divisibleByFive(number: number): string | void {
-    if(this.divisibleBy(number, 5)) return "Buzz"
+  divisibleByFive(number: number): boolean {
+    return (this.divisibleBy(number, 5)) 
   }
 
-  divisibleByThreeAndFive(number: number): string | void {
-    if(this.divisibleBy(number, 15)) return "FizzBuzz"
+  divisibleByThreeAndFive(number: number): boolean {
+    return (this.divisibleBy(number, 15)) 
   }
+
 }
