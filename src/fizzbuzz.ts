@@ -21,6 +21,8 @@ export class FizzBuzz {
       return "Fizzbuzz"
     } else if (this.divisibleByFive(number)) {
       return "Buzz"
+    } else if (this.divisibleByThree(number)) {
+      return "Fizz"
     }
   }
 }

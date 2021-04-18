@@ -38,5 +38,11 @@ describe("FizzBuzz", () => {
         expect(fizzBuzz.play(5)).to.equal("Buzz")
       })
     })
+
+    describe("multiples of three", () => {
+      it("should return 'Fizz' for 3", () => {
+        expect(fizzBuzz.play(3)).to.equal("Fizz")
+      })
+    })
   })
 })
