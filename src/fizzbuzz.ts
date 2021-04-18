@@ -16,13 +16,15 @@ export class FizzBuzz {
     return (this.divisibleBy(number, 15)) 
   }
 
-  play(number: number): string | void {
+  play(number: number): string | number {
     if (this.divisibleByThreeAndFive(number)) {
       return "Fizzbuzz"
     } else if (this.divisibleByFive(number)) {
       return "Buzz"
     } else if (this.divisibleByThree(number)) {
       return "Fizz"
+    } else {
+      return number
     }
   }
 }

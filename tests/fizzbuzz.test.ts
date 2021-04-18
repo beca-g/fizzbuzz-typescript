@@ -44,5 +44,11 @@ describe("FizzBuzz", () => {
         expect(fizzBuzz.play(3)).to.equal("Fizz")
       })
     })
+
+    describe("all other numbers", () => {
+      it("should return 1 for 1", () => {
+        expect(fizzBuzz.play(1)).to.equal(1)
+      })
+    })
   })
 })
